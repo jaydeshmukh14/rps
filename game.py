@@ -36,6 +36,7 @@ if __name__ == "__main__":
     print("Please follow all instructions henceforth outlined")
     #ask user for input
     user_input = input("Choose 'rock','paper','scissors':")
+    print("You Chose:", user_input)
 
     #validate user input
     userChoice = user_input.lower()
@@ -45,7 +46,7 @@ if __name__ == "__main__":
     import random
     options = ["rock","paper","scissors"]
     computerChoice = random.choice(options)
-    print("computer chooses:", computerChoice)
+    print("Computer chooses:", computerChoice)
 
     #Winner Determination (through function)
     winner = determine_winner(userChoice, computerChoice)
